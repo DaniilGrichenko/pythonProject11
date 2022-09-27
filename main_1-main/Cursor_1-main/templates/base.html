@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class=" blue lighten-2" role="navigation">
+    <div class="nav-wrapper container">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('blog.index')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=" {{ url_for('blog.get_posts') }}">Posts</a>
+        </li>
+        <li class="nav-item dropdown">
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('blog.create_post') }}">Write Posts</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+{% block content %} {% endblock %}
+  <div class="carousel carousel-slider center">
+    <div class="carousel-item  white-text" href="#one!">
+      <img src="https://communications.tennessee.edu/wp-content/uploads/sites/5/2015/07/Comm_header_bg-circles.jpg">
+
+
+    </div>
+    <div class="carousel-item  white-text" href="#two!">
+      <img src="https://devaka.info/wp-content/uploads/2012/04/1028.jpg">
+    </div>
+    <div class="carousel-item  white-text" href="#three!">
+      <img src="https://www.accordlms.com/portals/0/images/Blog/2015/AccordSupport.Support.png">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="container white">
+          <div class="section white">
+            <div class="row">
+              <div class="col s12 center ">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h4 class="blue-text text-darken-2">На цьому сайті ви зможете:</h4>
+                <h5 class="text-white black-text">Познайомитися і поспіслкуватися з однодумцями</h5>
+                <h5 class="text-white black-text">Дізнатися актуальні новини про світ IT</h5>
+                <h5 class="text-white black-text">Створити власний блог</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="https://devaka.info/wp-content/uploads/2012/04/1028.jpg">" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="center light black-text text-black"><b>Тут ви зможете знайти корисну інформацію зі сфери IT, а також поділитися власним досвідом</b></h4>
+          <a class=" btn right blue lighten-2 white black-text text-black"><b>Написати блог</b></a>
+          <a class=" btn left blue lighten-2 white black-text text-black"><b>Читати статті</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="https://communications.tennessee.edu/wp-content/uploads/sites/5/2015/07/Comm_header_bg-circles.jpg">" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h4 class="center light black-text text-black"><b>У форумі ви зможете обговорити останні новини IT</b></h4>
+          <h4 class="center light black-text text-black"><b>І отримати поради від фахівців у сфері IT</b></h4>
+          <a class=" btn center blue lighten-2 white black-text text-black"><b>Перейти у форум</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="https://www.accordlms.com/portals/0/images/Blog/2015/AccordSupport.Support.png">" alt="Unsplashed background img 3"></div>
+  </div>
+
+
+
+  <div class="row">
+    <h5 class="center light blue-text text-darken-2"><b>Підтримка</b></h5>
+    <h6 class="center light black-text text-black"><b>@gmail.com</b></h6>
+    <h6 class="center light black-text text-black"><b> Logo</b></h6>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
